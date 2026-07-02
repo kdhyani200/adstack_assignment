@@ -3,14 +3,13 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../core/colors.dart';
 
-/// Dark "GENERAL 10:00 AM TO 7:00 PM" calendar card with a month grid.
 class CalenderCard extends StatelessWidget {
   const CalenderCard({super.key});
 
   @override
   Widget build(BuildContext context) {
     final now = DateTime.now();
-    final firstWeekday = DateTime(now.year, now.month, 1).weekday; // 1=Mon
+    final firstWeekday = DateTime(now.year, now.month, 1).weekday;
     final daysInMonth = DateTime(now.year, now.month + 1, 0).day;
 
     return Container(
@@ -35,10 +34,7 @@ class CalenderCard extends StatelessWidget {
           const SizedBox(height: 12),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              _pill(_monthName(now.month)),
-              _pill("${now.year}"),
-            ],
+            children: [_pill(_monthName(now.month)), _pill("${now.year}")],
           ),
           const SizedBox(height: 12),
           Row(
@@ -85,8 +81,7 @@ class CalenderCard extends StatelessWidget {
                       "$dayNumber",
                       style: GoogleFonts.poppins(
                         fontSize: 11,
-                        fontWeight:
-                            isToday ? FontWeight.w600 : FontWeight.w400,
+                        fontWeight: isToday ? FontWeight.w600 : FontWeight.w400,
                         color: isToday
                             ? Colors.white
                             : AppColors.textOnDarkMuted,
@@ -121,8 +116,11 @@ class CalenderCard extends StatelessWidget {
             ),
           ),
           const SizedBox(width: 4),
-          const Icon(Icons.keyboard_arrow_down,
-              size: 14, color: AppColors.textOnDarkMuted),
+          const Icon(
+            Icons.keyboard_arrow_down,
+            size: 14,
+            color: AppColors.textOnDarkMuted,
+          ),
         ],
       ),
     );

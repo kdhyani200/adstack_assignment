@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 import '../core/colors.dart';
 import '../data/mock_data.dart';
 
-/// "Anniversary" card — dark panel with avatar stack + CTA.
 class AnniversaryCard extends StatelessWidget {
   const AnniversaryCard({super.key});
 

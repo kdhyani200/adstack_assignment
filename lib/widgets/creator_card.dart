@@ -5,7 +5,6 @@ import '../core/colors.dart';
 import '../data/mock_data.dart';
 import '../models/creator.dart';
 
-/// "Top Creators" list card with a rating bar per creator.
 class TopCreatorsCard extends StatelessWidget {
   const TopCreatorsCard({super.key});
 

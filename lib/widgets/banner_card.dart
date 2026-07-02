@@ -3,7 +3,6 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../core/colors.dart';
 
-/// "Top Rating Project" hero banner with decorative floating shapes.
 class BannerCard extends StatelessWidget {
   const BannerCard({super.key});
 

@@ -4,7 +4,6 @@ import 'package:google_fonts/google_fonts.dart';
 import '../core/colors.dart';
 import '../data/mock_data.dart';
 
-/// "Over All Performance The Years" line chart card.
 class ChartCard extends StatelessWidget {
   const ChartCard({super.key});
 
@@ -109,7 +108,6 @@ class _LineChartPainter extends CustomPainter {
       color: AppColors.textSecondary,
     );
 
-    // Horizontal grid lines + y labels (0,10,20,30,40,50)
     for (int i = 0; i <= 5; i++) {
       final y = chartHeight - (chartHeight * (i * 10) / maxValue);
       canvas.drawLine(Offset(leftAxis, y), Offset(size.width, y), gridPaint);
@@ -120,7 +118,6 @@ class _LineChartPainter extends CustomPainter {
       tp.paint(canvas, Offset(0, y - tp.height / 2));
     }
 
-    // X labels
     final stepX = chartWidth / (labels.length - 1);
     for (int i = 0; i < labels.length; i++) {
       final tp = TextPainter(

@@ -1,7 +1,7 @@
 class CreatorItem {
   final String handle;
   final int artworks;
-  final double rating; // 0.0 - 1.0, used to size the rating bar
+  final double rating;
 
   const CreatorItem({
     required this.handle,

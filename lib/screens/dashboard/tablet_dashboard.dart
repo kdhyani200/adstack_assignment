@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 import '../../core/colors.dart';
 import '../../widgets/anniversary_card.dart';
 import '../../widgets/banner_card.dart';
@@ -11,8 +10,6 @@ import '../../widgets/performance_chart.dart';
 import '../../widgets/project_card.dart';
 import '../../widgets/sidebar.dart';
 
-/// Medium-screen (700-1100px) layout — sidebar collapses into a drawer,
-/// main content and right panel remain side by side.
 class TabletDashboard extends StatelessWidget {
   const TabletDashboard({super.key});
 

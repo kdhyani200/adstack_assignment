@@ -11,8 +11,6 @@ import '../../widgets/performance_chart.dart';
 import '../../widgets/project_card.dart';
 import '../../widgets/sidebar.dart';
 
-/// Small-screen (<700px) layout — everything stacked in a scrollable
-/// column, sidebar tucked away in a drawer.
 class MobileDashboard extends StatelessWidget {
   const MobileDashboard({super.key});
 

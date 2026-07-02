@@ -57,21 +57,3 @@ flutter build ios --release        # iOS
 This repo includes a `vercel.json` that bootstraps the Flutter SDK during
 the Vercel build and outputs the compiled site from `build/web`. Just
 import the repository into Vercel — no extra configuration required.
-
-### Firebase Hosting
-
-```bash
-flutter build web --release
-firebase login
-firebase init hosting     # choose build/web as the public directory (already set in firebase.json)
-firebase deploy
-```
-
-## Notes
-
-- All dashboard content (projects, creators, birthdays, anniversary,
-  chart data) is mock data in `lib/data/mock_data.dart` — swap in a real
-  API/data source there.
-- The performance chart is drawn with a custom `CustomPainter`
-  (`lib/widgets/performance_chart.dart`) so no extra charting package is
-  required.

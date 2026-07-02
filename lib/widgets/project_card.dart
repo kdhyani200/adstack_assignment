@@ -5,7 +5,6 @@ import '../core/colors.dart';
 import '../data/mock_data.dart';
 import '../models/project.dart';
 
-/// "All Projects" list card.
 class AllProjectsCard extends StatelessWidget {
   const AllProjectsCard({super.key});
 

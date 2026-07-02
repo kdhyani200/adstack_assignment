@@ -3,7 +3,6 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../core/colors.dart';
 
-/// Top bar with page title, search field and quick action icons.
 class TopBar extends StatelessWidget {
   final VoidCallback? onMenuTap;
   final bool showMenuButton;
@@ -25,7 +24,10 @@ class TopBar extends StatelessWidget {
           if (showMenuButton)
             IconButton(
               onPressed: onMenuTap,
-              icon: const Icon(Icons.menu_rounded, color: AppColors.textPrimary),
+              icon: const Icon(
+                Icons.menu_rounded,
+                color: AppColors.textPrimary,
+              ),
             ),
           Text(
             "Home",

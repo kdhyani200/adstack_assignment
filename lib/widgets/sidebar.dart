@@ -3,8 +3,6 @@ import 'package:google_fonts/google_fonts.dart';
 import '../core/colors.dart';
 import '../data/mock_data.dart';
 
-/// Left navigation sidebar shown on desktop, and as a drawer on
-/// tablet / mobile layouts.
 class SidedBar extends StatefulWidget {
   const SidedBar({super.key});
 
@@ -34,7 +32,6 @@ class _SidedBarState extends State<SidedBar> {
           children: [
             const SizedBox(height: 20),
 
-            /// Logo
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Row(
@@ -49,7 +46,6 @@ class _SidedBarState extends State<SidedBar> {
 
             const SizedBox(height: 24),
 
-            /// Profile
             const CircleAvatar(
               radius: 32,
               backgroundColor: AppColors.primaryLight,

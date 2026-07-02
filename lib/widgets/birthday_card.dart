@@ -4,7 +4,6 @@ import 'package:google_fonts/google_fonts.dart';
 import '../core/colors.dart';
 import '../data/mock_data.dart';
 
-/// "Today Birthday" card — dark panel with avatar stack + CTA.
 class BirthdayCard extends StatelessWidget {
   const BirthdayCard({super.key});
 

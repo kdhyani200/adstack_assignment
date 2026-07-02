@@ -11,8 +11,6 @@ import '../../widgets/project_card.dart';
 import '../../widgets/sidebar.dart';
 import '../../widgets/top_bar.dart';
 
-/// Wide-screen (>=1100px) layout — sidebar + main content + right panel,
-/// all visible at once, matching the office dashboard mockup.
 class DesktopDashboard extends StatelessWidget {
   const DesktopDashboard({super.key});
 
@@ -30,7 +28,6 @@ class DesktopDashboard extends StatelessWidget {
                 padding: const EdgeInsets.all(12),
                 child: Column(
                   children: [
-                    // Top bar spans across both columns
                     const SizedBox(height: 70, child: TopBar()),
 
                     const SizedBox(height: 12),
@@ -38,7 +35,6 @@ class DesktopDashboard extends StatelessWidget {
                     Expanded(
                       child: Row(
                         children: [
-                          /// Main Content
                           Expanded(
                             flex: 3,
                             child: Column(
@@ -67,7 +63,6 @@ class DesktopDashboard extends StatelessWidget {
 
                           const SizedBox(width: 12),
 
-                          /// Right Panel
                           SizedBox(
                             width: 320,
                             child: Column(

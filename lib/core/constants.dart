@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-/// Shared layout/style constants used across the dashboard.
 class AppRadius {
   AppRadius._();
   static const double card = 20;
@@ -29,7 +28,6 @@ class AppShadows {
   ];
 }
 
-/// Responsive breakpoints (kept in sync with core/responsive.dart)
 class Breakpoints {
   Breakpoints._();
   static const double tablet = 700;
