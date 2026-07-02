@@ -2,8 +2,6 @@ import '../models/creator.dart';
 import '../models/person.dart';
 import '../models/project.dart';
 
-/// Static mock data that powers the office dashboard UI.
-/// Replace with real API/data-source calls when wiring up a backend.
 class MockData {
   MockData._();
 
