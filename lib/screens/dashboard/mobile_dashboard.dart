@@ -21,7 +21,7 @@ class MobileDashboard extends StatelessWidget {
 
       appBar: AppBar(
         title: Text(
-          "Dashboard",
+          "Home",
           style: GoogleFonts.poppins(fontWeight: FontWeight.w600),
         ),
         backgroundColor: AppColors.cardBg,
